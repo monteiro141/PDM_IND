@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">a44149_T9</string>
+    <string name="rules">
+        Exquisite corpse (from the original French term cadavre exquis, literally exquisite cadaver), "\n"
+        is a method by which a collection of words or images(in this app\'s case is words only) is collectively assembled. "\n"
+    You start by typing N words(changeable) in this options menu, and append them into a phrase in which it will be displayed in the final game. "\n"
+    You can also press the TTS(TextToSpeech) button in order to listen to an AI(Artificial Intelligence) speak the phrase that the players built. "\n"
+    In the options menu there are many adjustable settings, like the player order, number of rounds, etc. "\n"
+    Hope you enjoy the game!</string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/bg_cadavre"
+    tools:context=".JogoFinal"
+    tools:ignore="HardcodedText">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="16">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <ImageButton
+                android:id="@+id/ttsBId"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/tts"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9" />
+
+            <TextView
+                android:id="@+id/jogadorTVId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:autoText="true"
+                android:text="Final text"
+                android:textAlignment="center"
+                android:textColor="#574532"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textoTVId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:autoText="false"
+                android:background="@drawable/papiro"
+                android:gravity="left|top"
+                android:paddingLeft="45dp"
+                android:paddingTop="90dp"
+                android:paddingRight="45dp"
+                android:paddingBottom="90dp"
+                android:text="blablabla blablabla blablabla blablabla blablabla blablabla"
+                android:textColor="@color/black"
+                app:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/sairBId"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_medieval_nb"
+                android:onClick="goBack"
+                android:text="BACK" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

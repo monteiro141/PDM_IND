@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cadavre"
+    android:foregroundTint="#131212"
+    tools:context=".Jogo"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/jogadorTVId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player x"
+                android:textAlignment="center"
+                android:textColor="#574532"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/rondaTVId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Round X/Y"
+                android:textAlignment="center"
+                android:textColor="#574532"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/palavrasTVId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/papiro"
+                android:gravity="left|top"
+                android:paddingLeft="45dp"
+                android:paddingTop="5dp"
+                android:paddingRight="45dp"
+                android:paddingBottom="5dp"
+                android:text="blablabla blablabla blablabla blablabla blablabla blablabla"
+                android:textColor="@color/black"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/textoETId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:autoText="false"
+                android:background="@drawable/papiro"
+                android:gravity="left|top"
+                android:paddingLeft="45dp"
+                android:paddingTop="90dp"
+                android:paddingRight="45dp"
+                android:paddingBottom="90dp"
+                android:text="blablabla blablabla blablabla blablabla blablabla blablabla"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/sairBId"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_medieval_nb"
+                android:onClick="goBack"
+                android:text="back" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/concluirBId"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_medieval_nb"
+                android:onClick="goNext"
+                android:text="NEXT" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
